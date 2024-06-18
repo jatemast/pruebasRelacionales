@@ -39,6 +39,7 @@ Route::patch('/repuestos/{repuesto}/edit', [RepuestoController::class, 'update']
 Route::delete('/repuestos/{repuesto}', [RepuestoController::class, 'destroy'])->name('repuestos.destroy');
 Route::get('/repuestos/{repuesto}', [RepuestoController::class,'show'])->name('repuestos.show');
 Route::get('/repuestos/buscar', [RepuestoController::class, 'buscar'])->name('repuestos.buscar');
+Route::get('repuestos/fetchCategoria2', 'RepuestoController@fetchCategoria2')->name('repuestos.fetchCategoria2');
 
 
 

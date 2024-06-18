@@ -18,6 +18,7 @@
                             @foreach($categorias as $categoria)
                                 <option value="{{ $categoria }}" @if(request('categoria') == $categoria) selected @endif>{{ $categoria }}</option>
                             @endforeach
+                            <option value="otras_categorias" @if(request('categoria') == 'otras_categorias') selected @endif>Otras categorías</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Buscar</button>
